@@ -1,0 +1,25 @@
+.nav-bar {
+    top: 4rem;
+    height: 100vh;
+    width: 15rem;
+    position: fixed;
+    z-index: 1;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding: 1rem;
+    color: #303030;
+}
+
+.list {
+    margin-bottom: .6rem;
+}
+
+.list a {
+    color: #303030;
+    font-weight: 500;
+}
+
+.icon {
+    margin-right: .6rem;
+    /* font-size: .9rem; */
+}

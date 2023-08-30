@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #006bff;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: .5rem;
+  padding: .6rem .9rem;
+  opacity: 1;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+.container {
+  margin-top: 4rem;
+  margin-left: 15rem;
+
+  padding: 1.5rem;
+}
+
+.card {
+  border: .01rem solid #e3e3e3;
+  border-radius: .5rem;
+}
+
+/* ROW, COLUMN */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+}
+
+.col-1, .col-2, .col-3, .col-4, 
+.col-5, .col-6, .col-7, .col-8, 
+.col-9, .col-10, .col-11 {
+  flex: 0 0 auto;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* WIDTH */
+.width-100 {
+  width: 100%;
 }

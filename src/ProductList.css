@@ -1,0 +1,21 @@
+.ListTable {
+  border: 1px solid #000;
+}
+
+.ListTable__Row {
+  /* border-bottom: 5px solid gray; */
+}
+
+/* tr,
+td {
+  border: 1px solid grey;
+} */
+
+/* table {
+  border-spacing: 0;
+} */
+
+.title-cell,
+.shop-cell {
+  vertical-align: middle;
+}

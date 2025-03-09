@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Sans KR', serif;
+  font-style: normal;
+  color: #303030;
+  background-color: #f1f1f1;
+}
+
+a {
+  color: #303030;
+  text-decoration: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font: inherit;
+  outline: none;
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.fa-icon {
+  width: auto;
+  height: auto;
+}

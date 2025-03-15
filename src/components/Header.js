@@ -12,7 +12,7 @@ function Header() {
         stockee
       </a>
       <div className='header__nav'>
-        <a href='/' className='header__cafe24'>
+        <a href='/cafe24-inventory' className='header__cafe24'>
           {/* <img src='/cafe24-logo-circle.png' alt='Cafe24 Inventory' /> */}
           <img src='/cafe24-logo.png' alt='Cafe24 Inventory' />
         </a>

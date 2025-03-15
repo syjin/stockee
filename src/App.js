@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 
 import Main from './pages/Main';
+import Cafe24Stock from './pages/Cafe24Stock';
 import ShopifyStock from './pages/ShopifyStock';
 
 // import { library } from '@fortawesome/fontawesome-svg-core';
@@ -95,7 +96,8 @@ function App() {
         {/* Layout을 부모로 설정하고 그 안에 자식 Route를 배치 */}
         <Route path='/' element={<Layout />}>
           <Route index element={<Main />} /> {/* / 경로에서 Main 렌더링 */}
-          <Route path='shopify-inventory' element={<ShopifyStock />} />{' '}
+          <Route path='cafe24-inventory' element={<Cafe24Stock />} />
+          <Route path='shopify-inventory' element={<ShopifyStock />} />
           {/* /shopify-inventory 경로에서 ShopifyStock 렌더링 */}
         </Route>
       </Routes>

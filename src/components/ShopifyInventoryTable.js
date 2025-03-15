@@ -1,5 +1,7 @@
-import '../styles/Table.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faImage } from '@fortawesome/free-regular-svg-icons';
 import { useState } from 'react';
+import '../styles/Table.css';
 
 const ShopifyTable = ({ products = [], onInventoryUpdate }) => {
   // 재고 변경 상태 관리
@@ -85,7 +87,11 @@ const ShopifyTable = ({ products = [], onInventoryUpdate }) => {
                         />
                       </div>
                     ) : (
-                      <div className='table__no-image'>No Image</div>
+                      <div className='table__no-image'>
+                        <div className='table__image-wrapper'>
+                          <FontAwesomeIcon icon={faImage} />
+                        </div>
+                      </div>
                     )}
                   </td>
                   <td

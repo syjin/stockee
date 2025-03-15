@@ -28,7 +28,15 @@ input {
   font: inherit;
   outline: none;
   border: none;
-  border-radius: 0.75rem;
+}
+
+button {
+  border: none;
+  font: inherit;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .fa-icon {

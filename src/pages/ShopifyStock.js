@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import ShopifyInventoryTable from '../components/ShopifyInventoryTable';
 
 const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
@@ -101,7 +103,20 @@ const ShopifyStock = () => {
     <div className='app-container'>
       <h2>Shopify Inventory</h2>
 
-      <main className='app-content'>
+      <div className='table-container'>
+        <div className='table-controls'>
+          <span className='icon-search'>
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </span>
+          <input
+            type='text'
+            className='search-input'
+            placeholder='Searching all inventory'
+            // value={searchTerm}
+            // onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button className='save-button'>Save</button>
+        </div>
         {loading ? (
           <div className='loading-container'>
             <div className='loading-spinner'></div>
@@ -145,7 +160,7 @@ const ShopifyStock = () => {
             </div>
           </>
         )}
-      </main>
+      </div>
     </div>
   );
 };
